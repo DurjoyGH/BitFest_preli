@@ -5,7 +5,8 @@ Challenge 2: Mofa's Kitchen Buddy
   Route: /api/recipes/recommend
   Method: POST
   Sample Payload:
-  [
+ ```
+ [
       
      {
       "_id": "60d5f9b5f8d2b814c8a5e9b1",
@@ -62,11 +63,13 @@ Challenge 2: Mofa's Kitchen Buddy
       "preparationTime": "1 hour"
     }
   ]
+```
 
 2.Add a New Recipe (Text):
 
-    Route: /api/recipes/text
-    Method: POST
+  Route: /api/recipes/text
+  Method: POST
+  
     Sample Payload:
     {
         "recipeText": "Recipe Name: Lemon Tart\nIngredients: 1 1/2 cups flour, 1/2 cup butter, 3 tablespoons sugar, 2 eggs, 1/4 cup lemon juice, 1 teaspoon vanilla extract\nSteps: Prepare crust -> Mix eggs, sugar, and lemon juice -> Pour mixture into crust -> Bake at 350F for 25 minutes\nTaste": "Tangy\nReviews": ["Refreshing and zesty!", "Perfect balance of sweet and sour!"],\nCuisine Type": "Dessert\nPreparation Time": "40 minutes"
@@ -115,22 +118,27 @@ Challenge 2: Mofa's Kitchen Buddy
 
 4. Error Responses:
    # Missing Required Fields (POST /api/recipes/text):
+     ```
           Sample Response:
           {
               "message": "Missing required fields: recipeText."
           }
+     ```
   
    #Invalid Image File (POST /api/recipes/image):
-          Sample Response:
+      ```
+      Sample Response:
           {
               "message": "Invalid image file format. Please upload a valid image file."
           }
-  
+      ```
       
    #Invalid Recipe ID (Any PUT Endpoints):
+   ```
           Sample Response:
           {
                "message": "Invalid recipe ID"
           }
+   ```
 
     
