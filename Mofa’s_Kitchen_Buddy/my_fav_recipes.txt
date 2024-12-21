@@ -44,3 +44,13 @@
     Preparation Time: 1 hour
     -------------------------------
     
+  Recipe Name: Spaghetti Bolognese
+  Ingredients: 1 lb ground beef, 1 onion, chopped, 2 cloves garlic, minced, 1 can diced tomatoes, 1/4 cup red wine, 1 tbsp olive oil, 1 tsp salt, 1 tsp pepper, 1 lb spaghetti
+  Steps: Cook the spaghetti according to package instructions -> In a pan, heat olive oil and sauté onions and garlic -> Add ground beef and cook until browned -> Add diced tomatoes and red wine -> Simmer for 30 minutes -> Season with salt and pepper -> Serve the sauce over the cooked spaghetti
+  Taste: Savory
+  Reviews: A hearty meal!, Rich and flavorful sauce!
+  Cuisine Type: Italian
+  Preparation Time: 60 minutes
+  Image Path: undefined
+  -------------------------------
+  
