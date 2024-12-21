@@ -1,0 +1,46 @@
+
+    Recipe Name: Chocolate Cake
+    Ingredients: 2 cups flour, 1 cup sugar, 1/2 cup cocoa powder, 1 cup milk
+    Steps: Preheat oven to 350F -> Mix dry ingredients -> Add milk and mix well -> Bake for 30 minutes
+    Taste: Sweet
+    Reviews: Delicious!, Best cake ever!
+    Cuisine Type: Dessert
+    Preparation Time: 45 minutes
+    -------------------------------
+    
+    Recipe Name: Pasta Alfredo
+    Ingredients: 200g pasta, 100g butter, 1 cup cream, 1/2 cup parmesan cheese, Salt and pepper to taste
+    Steps: Boil pasta until al dente -> Melt butter in a pan -> Add cream and simmer -> Stir in parmesan cheese -> Mix pasta with sauce -> Season with salt and pepper
+    Taste: Rich
+    Reviews: Creamy and delicious!, My favorite pasta recipe!
+    Cuisine Type: Italian
+    Preparation Time: 25 minutes
+    -------------------------------
+    
+    Recipe Name: Chicken Curry
+    Ingredients: 500g chicken, 2 onions, 3 tomatoes, 1 tablespoon curry powder, 1 teaspoon cumin, 1 tablespoon ginger-garlic paste, Salt to taste
+    Steps: Sauté onions until golden -> Add ginger-garlic paste and cook -> Add chopped tomatoes and cook until soft -> Add chicken pieces and cook -> Add spices and simmer -> Serve hot with rice
+    Taste: Spicy
+    Reviews: Aromatic and flavorful!, Perfect with steamed rice!
+    Cuisine Type: Indian
+    Preparation Time: 40 minutes
+    -------------------------------
+    
+    Recipe Name: Vegetarian Pizza
+    Ingredients: 1 pizza dough, 1 cup tomato sauce, 1/2 cup mozzarella cheese, 1/2 cup bell peppers, 1/2 cup olives, 1/2 cup mushrooms, 1 teaspoon oregano
+    Steps: Preheat oven to 400F -> Roll out the pizza dough -> Spread tomato sauce over the dough -> Top with cheese and vegetables -> Sprinkle with oregano -> Bake for 15-20 minutes
+    Taste: Savory
+    Reviews: Perfectly crispy and cheesy!, Great for a vegetarian dinner!
+    Cuisine Type: Italian
+    Preparation Time: 30 minutes
+    -------------------------------
+    
+    Recipe Name: Apple Pie
+    Ingredients: 2 cups flour, 1 cup butter, 1/4 cup sugar, 1 teaspoon cinnamon, 5 apples, 1 tablespoon lemon juice, 1/4 cup brown sugar
+    Steps: Prepare pie crust -> Peel and slice apples -> Mix apples with sugar, cinnamon, and lemon juice -> Fill crust with apple mixture -> Cover with another layer of crust -> Bake at 375F for 45 minutes
+    Taste: Sweet
+    Reviews: Classic dessert!, Perfect for fall!
+    Cuisine Type: American
+    Preparation Time: 1 hour
+    -------------------------------
+    
