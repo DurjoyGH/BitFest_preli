@@ -6,6 +6,7 @@ const path = require("path");
 
 const router = express.Router();
 
+
 const upload = multer({ dest: "uploads/" });
 
 const RECIPES_FILE = "my_fav_recipes.txt";
@@ -14,19 +15,20 @@ if (!fs.existsSync(RECIPES_FILE)) {
   fs.writeFileSync(RECIPES_FILE, "", "utf8");
 }
 
-const saveRecipe = ({ name, ingredients, steps, taste, reviews, cuisineType, preparationTime }) => {
-    const recipeData = `
-    Recipe Name: ${name}
-    Ingredients: ${ingredients.join(", ")}
-    Steps: ${steps.join(" -> ")}
-    Taste: ${taste}
-    Reviews: ${reviews.join(", ")}
-    Cuisine Type: ${cuisineType}
-    Preparation Time: ${preparationTime}
-    -------------------------------
-    `;
-    fs.appendFileSync(RECIPES_FILE, recipeData, "utf8");
-  };
+const saveRecipe = ({ name, ingredients, steps, taste, reviews, cuisineType, preparationTime, imagePath }) => {
+  const recipeData = `
+  Recipe Name: ${name}
+  Ingredients: ${ingredients.join(", ")}
+  Steps: ${steps.join(" -> ")}
+  Taste: ${taste}
+  Reviews: ${reviews.join(", ")}
+  Cuisine Type: ${cuisineType}
+  Preparation Time: ${preparationTime}
+  Image Path: ${imagePath}
+  -------------------------------
+  `;
+  fs.appendFileSync(RECIPES_FILE, recipeData, "utf8");
+};
   
   router.post("/text", (req, res) => {
     const { name, ingredients, steps, taste, reviews, cuisineType, preparationTime } = req.body;
@@ -51,6 +53,8 @@ const saveRecipe = ({ name, ingredients, steps, taste, reviews, cuisineType, pre
       const result = await tesseract.recognize(imagePath, "eng");
       const recipeText = result.data.text.trim();
   
+      console.log("Extracted Text:", recipeText);
+  
       if (!recipeText) {
         return res.status(400).json({ message: "No text found in the image." });
       }
@@ -67,7 +71,7 @@ const saveRecipe = ({ name, ingredients, steps, taste, reviews, cuisineType, pre
         ?.replace("Steps:", "")
         ?.split("->")
         ?.map(step => step.trim()) || [];
-
+  
       const taste = otherLines.find(line => line.startsWith("Taste:"))?.replace("Taste:", "").trim() || "Unknown";
       const reviews = otherLines.filter(line => line.startsWith("Review:")).map(line => line.replace("Review:", "").trim()) || [];
       const cuisineType = otherLines.find(line => line.startsWith("Cuisine Type:"))?.replace("Cuisine Type:", "").trim() || "Unknown";
@@ -85,7 +89,7 @@ const saveRecipe = ({ name, ingredients, steps, taste, reviews, cuisineType, pre
     } catch (error) {
       res.status(500).json({ message: "Error processing image.", error });
     }
-});
+  });
   
 router.get("/", (req, res) => {
     try {
